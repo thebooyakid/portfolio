@@ -17,6 +17,8 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -114,7 +116,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Drone Inventory API.png" title="https://drone-inventory-at.herokuapp.com/">
+                        <a class="portfolio-box" href="https://drone-inventory-at.herokuapp.com/" target="blank" title="https://drone-inventory-at.herokuapp.com/">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/Drone Inventory API.png" alt="Drone app screenshot" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Flask</div>
@@ -141,20 +143,20 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/food shot.png" title="recipe app url">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/food shot.png" alt="recipe app screenshot" />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">React</div>
+                                <div class="project-name">Recipe App</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/Band Poster Project.png" title="band poster project url">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/Band Poster Project.png" alt="band poster screenshot" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">JavaScript</div>
                                 <div class="project-name">Band Poster Project</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Recipe App.png" title="recipe app url">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/Recipe App.png" alt="recipe app screenshot" />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Flask</div>
-                                <div class="project-name">Recipe App</div>
                             </div>
                         </a>
                     </div>
@@ -178,45 +180,24 @@
                         <p class="text-muted mb-5">Send me a message and I'll get back to you as soon as possible. Or just give me a call!</p>
                     </div>
                 </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                <!-- <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div class="col-lg-6">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
+                      
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <!-- <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div> -->
-                            <!-- Email address input-->
+                          
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
-                            <!-- Phone number input-->
-                            <!-- <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div> -->
-                            <!-- Message input-->
+                            
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
+                        
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">Form submission successful!</div>
@@ -225,17 +206,14 @@
                                     <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
                             </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
+                            ]
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
+                            
                             <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
                         </form>
                     </div>
                 </div>
-                
+                 -->
                 <!-- <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
@@ -286,14 +264,105 @@
                     </div>
                 </div> -->
                 
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!-- <div class="col-lg-8 col-xl-6 text-center"> -->
+                
+                
+                <!-- <div class="container">
+
+                    <div class="row"> -->
+        
+                        <div class="col-xl-8  py-5 text-center">
+        
+                            <h1>Contact Me</a></h1>
+        
+                            <p class="lead">Please fill in all fields</p>
+        
+                            <!-- We're going to place the form here in the next step -->
+                            <form id="contact-form" method="post" action="contact.php" role="form">
+
+                                <div class="messages"></div>
+                            
+                                <div class="controls">
+                            
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_name">Firstname *</label>
+                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_lastname">Lastname *</label>
+                                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_email">Email *</label>
+                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_need">Please specify your need *</label>
+                                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                    <option value=""></option>
+                                                    <option value="Request quotation">Request Freelance Services</option>
+                                                    <option value="Request order status">Full Time Job Opportunity</option>
+                                                    <!-- <option value="Request copy of an invoice"></option> -->
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="form_message">Message *</label>
+                                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="submit" class="btn btn-primary btn-send" value="Send message">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p class="text-muted">
+                                                <strong>*</strong> Required. 
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </form>
+        
+                        </div>
+        
+                    </div>
+        
+                </div>
                 
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
                         <i class="bi-phone fs-2 mb-3 text-muted"></i>
                         <div>(808) 756-1435</div>
+                        
                     </div>
                     <!-- <div class="col-lg-4 text-center mb-5 mb-lg-0">
                         <i class="bi-laptop fs-2 mb-3 text-muted"></i>
+                        <i class="fab fa-linkedin-in s-2 mb-3 text-muted"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin-in"></i>
                         <div>alex96740@gmail.com</div>
                     </div> -->
                 </div>
@@ -303,16 +372,29 @@
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - Alex Tymczyszyn</div></div>
         </footer>
-        <!-- Bootstrap core JS-->
+    
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- SimpleLightbox plugin JS-->
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <!-- Core theme JS-->
+        
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+        <script src="../startbootstrap-creative-gh-pages/js/contact.js"></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.8.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+
     </body>
 </html>
